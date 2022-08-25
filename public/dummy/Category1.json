@@ -1,0 +1,118 @@
+{
+  "data": [
+    {
+      "name": "고메너겟 550g",
+      "category": "냉동식품",
+      "image": "/dummy/images/1000017881148_i2_290.jpeg",
+      "originPrice": 10000,
+      "bargainPrice": 9000,
+      "redTag": ["신세계포인트 적립 시 2천원 할인"],
+      "blueTag": [],
+      "memoCount": 161,
+      "commentCount": 41
+    },
+    {
+      "name": "양반김 10호",
+      "category": "선물세트",
+      "image": "/dummy/images/1000036068958_i2_290.jpeg",
+      "originPrice": 19000,
+      "bargainPrice": 16900,
+      "redTag": ["신세계포인트 적립 시 2천원 할인"],
+      "blueTag": [],
+      "memoCount": 65,
+      "commentCount": 0
+    },
+    {
+      "name": "군옥수수맛아몬드 210g",
+      "category": "스낵",
+      "image": "/dummy/images/1000036426538_i2_290.jpeg",
+      "originPrice": 7990,
+      "bargainPrice": 7990,
+      "redTag": [],
+      "blueTag": ["동일가격 교차구매 가능", "1+1"],
+      "memoCount": 384,
+      "commentCount": 59
+    },
+    {
+      "name": "햇반 흑미밥 210g*8번들",
+      "category": "간편식품",
+      "image": "/dummy/images/1000045460466_i2_290.jpeg",
+      "originPrice": 19730,
+      "bargainPrice": 14980,
+      "redTag": ["신세계포인트 적립 시 3천원 할인"],
+      "blueTag": [],
+      "memoCount": 43,
+      "commentCount": 0
+    },
+    {
+      "name": "티아시아 치킨 마크니 커리",
+      "category": "간편식품",
+      "image": "/dummy/images/1000064702710_i2_290.jpeg",
+      "originPrice": 5780,
+      "bargainPrice": 3480,
+      "redTag": ["신세계포인트 적립 시 1천원 할인"],
+      "blueTag": [],
+      "memoCount": 324,
+      "commentCount": 90
+    },
+    {
+      "name": "아이오감 버블클렌저 포도_250ml",
+      "category": "뽀득뽀득",
+      "image": "/dummy/images/1000098689673_i1_290.jpeg",
+      "originPrice": 12900,
+      "bargainPrice": 10900,
+      "redTag": [],
+      "blueTag": ["동일가격 교차구매 가능", "1+1"],
+      "memoCount": 0,
+      "commentCount": 5
+    },
+    {
+      "name": "아이오감 버블클렌저 살구_250ml",
+      "category": "뽀득뽀득",
+      "image": "/dummy/images/1000098689693_i1_290.jpeg",
+      "originPrice": 12900,
+      "bargainPrice": 10900,
+      "redTag": [],
+      "blueTag": ["동일가격 교차구매 가능", "1+1"],
+      "memoCount": 8,
+      "commentCount": 0
+    },
+    {
+      "name": "아이오감 버블클렌저 딸기_250ml",
+      "category": "뽀득뽀득",
+      "image": "/dummy/images/1000098689698_i1_290.jpeg",
+      "originPrice": 12900,
+      "bargainPrice": 10900,
+      "redTag": [],
+      "blueTag": ["동일가격 교차구매 가능", "1+1"],
+      "memoCount": 0,
+      "commentCount": 100
+    },
+    {
+      "name": "고추참치",
+      "category": "간편식품",
+      "image": "/dummy/images/1000129869034_i2_290.jpeg",
+      "originPrice": 29900,
+      "bargainPrice": 19900,
+      "redTag": ["신세계포인트 적립 시 1만원 할인"],
+      "blueTag": [],
+      "memoCount": 97,
+      "commentCount": 947
+    },
+    {
+      "name": "정관장 홍삼정 에브리타임 밸런스",
+      "category": "선물세트",
+      "image": "/dummy/images/1000168004446_i2_290.jpeg",
+      "originPrice": 89000,
+      "bargainPrice": 52000,
+      "redTag": ["신세계포인트 적립 시 3천원 할인"],
+      "blueTag": [],
+      "memoCount": 34,
+      "commentCount": 380
+    }
+  ],
+  "pageable": {
+    "pageNumber": 1,
+    "pageSize": 2
+  }
+}

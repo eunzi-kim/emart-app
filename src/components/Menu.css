@@ -1,5 +1,8 @@
 .menu {
   font-size: 0.9rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 
 .menu-basic {

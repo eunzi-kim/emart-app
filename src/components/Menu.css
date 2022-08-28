@@ -1,0 +1,98 @@
+.menu {
+  font-size: 0.9rem;
+}
+
+.menu-basic {
+  display: flex;
+  height: 5.5vh;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cate-box {
+  height: 100%;
+  margin: 0 1rem 0.1rem 1rem;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: gray;
+  cursor: pointer;
+}
+
+.active-category {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.menu-arrow {
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#ID_BTN_DOWN,
+#ID_BTN_UP {
+  height: 1rem;
+}
+
+.none {
+  display: none;
+}
+
+.menu-top {
+  height: 5.5vh;
+  display: flex;
+  align-items: center;
+}
+
+.menu-title {
+  text-align: left;
+  padding-left: 1.2rem;
+  width: 90vw;
+}
+
+#ID_HR_MENU {
+  margin: 0 1rem;
+  background: #dcdcdc;
+  height: 1px;
+  border: 0;
+}
+
+.menu-categories {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 5px 5px gray;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.detail-cate-box {
+  height: 100%;
+  margin: 0.25rem;
+}
+
+.detail-category {
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  border-radius: 30px;
+}

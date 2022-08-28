@@ -1,0 +1,23 @@
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.nav_icon {
+  width: 1.3rem;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
+#ID_NAV_TITLE {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav_left,
+.nav_right {
+  width: 3.8rem;
+}

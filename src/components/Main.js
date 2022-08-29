@@ -3,19 +3,19 @@ import React, { useState, useEffect } from "react";
 import "./Main.css";
 
 function Main() {
-  const [data, setData] = useState([]);
+  const [info, setInfo] = useState({ allData: [], data: [] });
   const [page, setPage] = useState(1);
 
   // 상품 데이터 받아오기
   const getData = () => {
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", `/dummy/Data${page}.json`, true);
+    xhr.open("GET", "/dummy/Data.json", true);
     xhr.send();
 
     xhr.onload = () => {
       if (xhr.status === 200) {
         let res = JSON.parse(xhr.response);
-        setData(res.data);
+        setInfo({ allData: res.data, data: res.data.slice(0, 10) });
       }
     };
   };
@@ -24,9 +24,28 @@ function Main() {
     getData();
   }, []);
 
+  // 10개씩 리스트 추가
+  const addData = () => {
+    if (page * 10 < info.allData.length) {
+      let newData = info.allData.slice(0, (page + 1) * 10);
+      setInfo({ ...info, data: newData });
+      setPage(page + 1);
+    }
+  };
+
+  // 스크롤 이벤트 (무한스크롤)
+  document.addEventListener("scroll", (e) => {
+    const scrollHeight = e.target.scrollingElement.scrollHeight;
+    const scrollTop = e.target.scrollingElement.scrollTop;
+    const clientHeight = e.target.scrollingElement.clientHeight;
+    if (scrollHeight <= scrollTop + clientHeight) {
+      addData();
+    }
+  });
+
   return (
     <div className="main">
-      {data.map((val, idx) => (
+      {info.data.map((val, idx) => (
         <div key={idx} className="list">
           <img src={val.image} alt="상품 이미지" className="goods-img" />
 

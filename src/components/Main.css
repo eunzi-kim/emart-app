@@ -6,6 +6,7 @@
 
 .list {
   display: flex;
+  justify-content: center;
   margin: 0.7rem 0;
 }
 
@@ -73,4 +74,22 @@
 
 .emoji {
   margin-right: 0.5rem;
+}
+
+@media (min-width: 880px) {
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .list {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list {
+    width: 30%;
+  }
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./Menu.css";
 
-function Menu() {
+function Menu({ sendCategory }) {
   const up_img = "/images/up.png";
   const down_img = "/images/down.png";
 
@@ -42,9 +42,41 @@ function Menu() {
   };
 
   // 카테고리 선택
-  const onSelectCategory = (i) => {
-    setActive(i);
+  const onSelectCategory = (categoryName) => {
+    setActive(categoryName);
+    sendCategory(categoryName); // 부모에게 전달
+    onClickUp();
   };
+
+  // 마우스 좌우 스크롤
+  const slider = document.querySelector(".menu-bar");
+  let drag = false;
+  let startX = 0;
+  let scrollLeft = 0;
+
+  if (slider) {
+    slider.addEventListener("mousedown", (e) => {
+      drag = true;
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener("mouseup", () => {
+      drag = false;
+    });
+
+    slider.addEventListener("mouseleave", () => {
+      drag = false;
+    });
+
+    slider.addEventListener("mousemove", (e) => {
+      if (drag) {
+        const x = e.pageX - slider.offsetLeft;
+        const move = x - startX;
+        slider.scrollLeft = scrollLeft - move;
+      }
+    });
+  }
 
   return (
     <div className="menu">
@@ -83,7 +115,21 @@ function Menu() {
         <div className="menu-categories">
           {cate.map((val, idx) => (
             <div key={idx} className="detail-cate-box">
-              <div className="detail-category">{val}</div>
+              {activce === val ? (
+                <div
+                  className="detail-category active-detail-category"
+                  onClick={() => onSelectCategory(val)}
+                >
+                  {val}
+                </div>
+              ) : (
+                <div
+                  className="detail-category"
+                  onClick={() => onSelectCategory(val)}
+                >
+                  {val}
+                </div>
+              )}
             </div>
           ))}
         </div>

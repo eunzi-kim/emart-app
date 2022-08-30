@@ -3,13 +3,15 @@
   display: flex;
 }
 
-#ID_BTN_UP {
+#ID_BTN_GO_UP {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   height: 2rem;
   width: 2rem;
   font-size: 1rem;
-  background-color: aliceblue;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #000;
   border-radius: 5px;
 }

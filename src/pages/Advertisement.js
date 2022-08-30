@@ -25,7 +25,7 @@ function Advertisement() {
       <div id="ID_INFORMATION">금주의 전단 상품을 만나보세요</div>
       <Menu sendCategory={getCategory} />
       <Main categoryName={categoryName} />
-      <button id="ID_BTN_UP" onClick={onGoUp}>
+      <button id="ID_BTN_GO_UP" onClick={onGoUp}>
         ⬆️
       </button>
     </div>

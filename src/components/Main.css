@@ -81,17 +81,16 @@
   .main {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .list {
-    width: 40%;
+    width: 50%;
     justify-content: flex-start;
   }
 }
 
 @media (min-width: 1200px) {
   .list {
-    width: 30%;
+    width: 33%;
   }
 }

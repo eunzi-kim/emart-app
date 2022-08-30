@@ -72,6 +72,7 @@ function Main({ categoryName }) {
       categoryData: tempData,
       data: tempData.slice(0, 10),
     });
+    setPage(1);
   }, [categoryName]);
 
   return (

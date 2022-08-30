@@ -2,3 +2,14 @@
   margin: 1rem 2rem;
   display: flex;
 }
+
+#ID_BTN_UP {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  border-radius: 5px;
+}

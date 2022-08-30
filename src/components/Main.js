@@ -38,13 +38,20 @@ function Main({ categoryName }) {
   };
 
   // 스크롤 이벤트 (무한스크롤)
-  document.addEventListener("scroll", (e) => {
+  const onScroll = (e) => {
     const scrollHeight = e.target.scrollingElement.scrollHeight;
     const scrollTop = e.target.scrollingElement.scrollTop;
     const clientHeight = e.target.scrollingElement.clientHeight;
     if (scrollHeight <= scrollTop + clientHeight) {
       addData();
     }
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", onScroll);
+    return () => {
+      document.removeEventListener("scroll", onScroll);
+    };
   });
 
   // 카테고리 변경되면 리스트 변경

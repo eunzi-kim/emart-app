@@ -65,7 +65,6 @@ function Main({ categoryName }) {
       categoryData: tempData,
       data: tempData.slice(0, 10),
     });
-    console.log(categoryName);
   }, [categoryName]);
 
   return (

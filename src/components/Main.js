@@ -64,12 +64,7 @@ function Main({ categoryName }) {
   // 카테고리 변경되면 리스트 변경
   useEffect(() => {
     window.scrollTo(0, 0);
-    let tempData = [];
-    for (let x of info.allData) {
-      if (x.category === categoryName) {
-        tempData.push(x);
-      }
-    }
+    let tempData = info.allData.filter((x) => x.category === categoryName);
     // 카테고리가 전체인 경우, 전체 데이터 넣기
     if (categoryName === "전체") {
       tempData = info.allData;

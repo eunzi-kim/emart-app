@@ -21,6 +21,10 @@ function Menu({ sendCategory }) {
         let categoryArr = ["전체"];
         categoryArr.push(...res.category);
         setCate(categoryArr);
+      } else {
+        let error_msg =
+          "code : " + xhr.status + "\n" + "message : " + xhr.responseText;
+        alert(error_msg);
       }
     };
   };

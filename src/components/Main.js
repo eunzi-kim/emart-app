@@ -38,7 +38,8 @@ function Main({ categoryName }) {
   const addData = () => {
     if (page * 10 < info.categoryData.length) {
       let newData = info.categoryData.slice(0, (page + 1) * 10);
-      setInfo({ ...info, data: newData });
+      // 무한스크롤 느낄 수 있도록 시간 지연
+      setTimeout(() => setInfo({ ...info, data: newData }), 100);
       setPage(page + 1);
     }
   };

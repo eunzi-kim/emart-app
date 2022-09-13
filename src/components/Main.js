@@ -21,6 +21,12 @@ function Main({ categoryName }) {
           data: res.data.slice(0, 10),
         });
       }
+      // 에러
+      else {
+        let error_msg =
+          "code : " + xhr.status + "\n" + "message : " + xhr.responseText;
+        alert(error_msg);
+      }
     };
   };
 
